@@ -9,8 +9,8 @@ def load_library(file)
   getEmoticon = emoticons.each {|k,v| v[0],v[1]}
   p getEmoticon
   hash = {
-  get_meaning => { m },
-  get_emoticon => { e }
+  get_meaning => {},
+  get_emoticon => {}
   }
   hash
 end
