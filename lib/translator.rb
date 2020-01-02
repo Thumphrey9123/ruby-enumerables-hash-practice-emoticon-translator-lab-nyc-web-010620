@@ -6,7 +6,7 @@ require 'pp'
 def load_library(file)
   emoticons = YAML.load_file(file)
   print emoticons.class
-  getMeaning = emoticons.each do |k,v| v[1], k end
+  getMeaning = [emoticons.each do |k,v| v[1], k end]
   getEmoticon = emoticons.each do |k,v| v[0],v[1] end
   p getEmoticon
   hash = {
