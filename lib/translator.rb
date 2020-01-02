@@ -12,7 +12,7 @@ def load_library(file)
   new_hash
   emoticons.each {|k,v| new_hash[v[1]] = k }
   emoticons.each {|k,v| hash[get_emoticon][v[0]] = v[1]}
-  pp new_hash
+  pp emoticons
   #hash
 end
 
