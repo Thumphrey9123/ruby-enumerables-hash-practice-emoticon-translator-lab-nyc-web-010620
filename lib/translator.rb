@@ -5,9 +5,10 @@ require 'pp'
 
 def load_library(file)
   emoticons = YAML.load_file(file)
-  pp emoticons
-  # getMeaning = [emoticons.each do |k,v| v[1], k end]
-  # getEmoticon = emoticons.each do |k,v| v[0],v[1] end
+  new_hash = {}
+  emoticons.each {|k,v| new_hash[v[1]] = k }
+  emoticons.each {|k,v| new_hash[v[0]] = v[1]}
+  pp new_hash
   # p getEmoticon
   # hash = {
   # get_meaning => {},
