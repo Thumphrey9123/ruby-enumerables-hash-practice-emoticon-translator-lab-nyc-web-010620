@@ -13,11 +13,11 @@ end
 
 def get_japanese_emoticon(file, emoticon)
   lib = load_library(file)
-  if lib[:get_emoticon][emoticon]
-    return lib[:get_emoticon][emoticon]
-  else
-    return "Sorry, that emoticon was not found"
-end
+#   if lib[:get_emoticon][emoticon]
+#     return lib[:get_emoticon][emoticon]
+#   else
+#     return "Sorry, that emoticon was not found"
+# end
 end
 
 def get_english_meaning(file, emoticon)
